@@ -4,16 +4,16 @@ const {publicRuntimeConfig} = getConfig()
 
 console.log(getConfig())
 
-export const API = process.env.PRODUCTION 
-    ? process.env.API_PRODUCTION 
-    : process.env.API_DEVELOPMENT
+export const API = publicRuntimeConfig.PRODUCTION 
+    ? publicRuntimeConfig.API_PRODUCTION 
+    : publicRuntimeConfig.API_DEVELOPMENT
     
-export const APP_NAME = process.env.APP_NAME
+export const APP_NAME = publicRuntimeConfig.APP_NAME
 
-export const DOMAIN = process.env.PRODUCTION 
-    ? process.env.DOMAIN_DEVELOPMENT
-    : process.env.DOMAIN_PRODUCTION
+export const DOMAIN = publicRuntimeConfig.PRODUCTION 
+    ? publicRuntimeConfig.DOMAIN_DEVELOPMENT
+    : publicRuntimeConfig.DOMAIN_PRODUCTION
 
-export const FB_APP_ID = process.env.FB_APP_ID
+export const FB_APP_ID = publicRuntimeConfig.FB_APP_ID
 
-export const DISQUS_SHORTNAME = process.env.DISQUS_SHORTNAME
+export const DISQUS_SHORTNAME = publicRuntimeConfig.DISQUS_SHORTNAME
