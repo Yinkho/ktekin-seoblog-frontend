@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next"
+    "start": "NODE_ENV=production next"
   },
   "keywords": [],
   "author": "",
